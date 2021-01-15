@@ -34,9 +34,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 WHEN I run the application,
 THEN I can create and save notes
 WHEN some notes were previously saved, 
-THEN I should be able to view them
-WHEN some notes were previously saved,
-THEN I can delete them if I want.
+THEN I can view them or delete them.
 
 ```
 
