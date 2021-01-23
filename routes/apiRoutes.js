@@ -37,24 +37,27 @@ module.exports = function (app) {
     var idSelected = JSON.parse(req.params.id);
     console.log(idSelected)
 
-   objectsList = objectsList.filter((e)=>{
+    objectsList = objectsList.filter((e) => {
       console.log(e.id);    // FOR TESTING
       return e.id != idSelected;
     });
     console.log("List of the objects in API:", objectsList);    // FOR TESTING
 
-    // TO DO: reassign object.id to array index of objectsList
-
+    // Reassign object.id to array index of objectsList
+    objectsList.forEach((val, index) => {
+      val.id = index;
+    })
+    console.log("List of the objects in API2:", objectsList);
     fs.writeFile("./db/db.json", JSON.stringify(objectsList), (err) => {
       if (err) throw err;
     });
     res.end(); // Shorten the response
   });
 
-// MAYBE For future:
-/* API PUT Requests 
-app.put("/api/notes/:id", function (req, res) {
-  var idSelected = JSON.parse(req.params.id);
-*/
+  // EXTRA:
+  /* API PUT Requests 
+  app.put("/api/notes/:id", function (req, res) {
+    var idSelected = JSON.parse(req.params.id);
+  */
 
 };
