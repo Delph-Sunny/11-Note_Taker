@@ -39,7 +39,8 @@ THEN I can view them or delete them.
 ## Table of Contents  
 
 * [Installation and Usage](#Installation-and-Usage)  
-* [Images of the app](#Images-of-the-app-) 
+* [Images of the app](#Images-of-the-app-)  
+* [Credits](#Credits) 
 * [License](#License)  
 * [Contact](#Contact) 
 
@@ -67,10 +68,13 @@ Adding notes:
 The api after removing note #2:  
 ![Note_Taker3](./images/Snippet3.PNG)  
 
+## Credits
+ 
+Icons made by Freepik from [www.flaticon.com](https://www.flaticon.com/)  
+
 ## License  
 
-Copyright (c) 2021 DT.  
-This project is [MIT](https://choosealicense.com/licenses/mit) licensed.
+Copyright (c) 2021 DT. This project is [MIT](https://choosealicense.com/licenses/mit) licensed.
 
 ## Contact  
 
