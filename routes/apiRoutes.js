@@ -28,16 +28,14 @@ module.exports = function (app) {
 
   // API DELETE Requests  
   app.delete("/api/notes/:id", function (req, res) {
-    var idSelected = JSON.parse(req.params.id);   // Get the id selected by the user
-
+    let idSelected = JSON.parse(req.params.id);   // Get the id selected by the user
     // New array of objects by filtering out the object with the selected id
     objectsList = objectsList.filter((e) => {
       return e.id != idSelected;
     });
-
     // Reassign object.id to array index of objectsList
     objectsList.forEach((val, index) => {
-      val.id = index;
+      val.id = index.toString();
     });
 
     fs.writeFile("./db/db.json", JSON.stringify(objectsList), (err) => {
@@ -46,12 +44,25 @@ module.exports = function (app) {
     res.end(); // Shorten the response
   });
 
-  // EXTRA FOR FUTURE DEVELOPMENT:
-  /* API PUT Requests 
+  /* EXTRA FOR FUTURE DEVELOPMENT:
+  //API PUT Requests
   app.put("/api/notes/:id", function (req, res) {
-    var idSelected = JSON.parse(req.params.id);
-    TO DO
+    let idSelected = JSON.parse(req.params.id);
+    let note = objectsList.filter((e) => {
+      return e.id == idSelected;
+    });
+    console.log("note to update:", details);   // FOR TESTING
+    note = { title: req.body.title, text: req.body.text };
+    objectsList.forEach((val) => {
+      if (val.id == idSelected) {
+        console.log("Object matching id", val);   // FOR TESTING
+        val = note;
+      };
+    });
+    fs.writeFile("./db/db.json", JSON.stringify(objectsList), (err) => {
+      if (err) throw err;
+    });
+    res.send(note);
   });
   */
-
 };
