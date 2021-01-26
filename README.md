@@ -59,13 +59,13 @@ THEN I can view them or delete them.
 
 ## Images of the app :mag:  
 Launched app:  
-![Note_Taker1](./public/assets/images/Snippet1.PNG)  
+![Note_Taker1](./images/Snippet1.PNG)  
 
 Adding notes:  
-![Note_Taker2](./public/assets/images/Snippet2.PNG)
+![Note_Taker2](./images/Snippet2.PNG)
 
 The api after removing note #2:  
-![Note_Taker3](./public/assets/images/Snippet3.PNG)  
+![Note_Taker3](./images/Snippet3.PNG)  
 
 ## License  
 
