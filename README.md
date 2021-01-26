@@ -47,7 +47,7 @@ THEN I can view them or delete them.
 
 ## Installation and Usage  
 
-- You can run the Heroku deployed app directly by clicking on this [link](). 
+- You can run the Heroku deployed app directly by clicking on this [link](https://polar-chamber-79961.herokuapp.com/). 
 
 
 - To install without using the deployed app, follow the below steps: 
