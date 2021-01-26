@@ -4,7 +4,6 @@
   "description": "express server and Heroku for week 11 homework",
   "main": "server.js",
   "scripts": {
-    "test": "jest --verbose test/*",
     "start": "node server.js",
     "watch": "nodemon server.js"
   },
@@ -12,7 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "jest": "^26.6.3",
     "nodemon": "^2.0.7"
   }
 }
